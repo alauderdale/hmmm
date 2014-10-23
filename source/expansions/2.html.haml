@@ -1,0 +1,41 @@
+;;;
+	"title": "Drag & Drop Image Replace"
+;;;
+
+%section.invert-section.page-header-section{:style=>"background-image:url('/images/expansions/1/header-bg.png');"}
+	.container
+		.row
+			.col-lg-12.text-center
+				%h5
+					expansion
+				%h1
+					drag and drop image replacement
+%section.page-header-image.no-padding-bottom
+	.container
+		.text-center
+			.row
+				.col-sm-2
+				.col-sm-8
+					=image_tag'expansions/2/hero.png', :class=>"img-responsive"
+				.col-sm-2
+%section
+	.container
+		.row
+			.col-sm-2
+			.col-sm-8
+				%h3
+					The Problem
+				%p
+					Replacing images using file names and PSDs is fantastic! Sometimes however, we have the image saved somewhere else, like Google Drive. InVision is sitting open in our browser, right next to an open finder window displaying our google drive file directory. 
+				%h3
+					The Solution
+				%p
+					With drag and drop image replacement, updating images has never been easier!
+			.col-sm-2
+%section.invert-section
+	.container
+		.row
+			.col-lg-12
+				=image_tag'expansions/2/figure-1.png', :class=>"img-responsive"
+=partial"/shared/features-nav"
+

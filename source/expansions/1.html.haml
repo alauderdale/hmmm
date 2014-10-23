@@ -1,5 +1,5 @@
 ;;;
-	"title": "Styles"
+	"title": "Transparent PNG Support"
 ;;;
 
 %section.invert-section.page-header-section{:style=>"background-image:url('/images/expansions/1/header-bg.png');"}
@@ -7,35 +7,41 @@
 		.row
 			.col-lg-12.text-center
 				%h5
-					refinement
+					expansion
 				%h1
 					transparent PNG support
-%section.page-header-image
+%section.page-header-image.no-padding-bottom
 	.container
 		.text-center
 			.row
-				.col-sm-1
-				.col-sm-10
+				.col-sm-2
+				.col-sm-8
 					=image_tag'expansions/1/hero.png', :class=>"img-responsive"
-				.col-sm-1
+				.col-sm-2
 %section
 	.container
 		.row
-			.col-sm-1
-			.col-sm-10
+			.col-sm-2
+			.col-sm-8
 				%h3
 					The Problem
 				%p
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis purus interdum sem elementum, vel luctus nisl pharetra. Phasellus ultrices tempor augue condimentum faucibus. Maecenas porta euismod pretium. Aenean ornare eu eros auctor sodales. Integer sit amet tortor eget est blandit sodales. Nam sit amet felis at magna iaculis condimentum. Phasellus sit amet mi fringilla, volutpat ipsum vitae, malesuada odio. Etiam vitae massa porta, porta lacus ac, euismod nibh. Vivamus non pulvinar lorem.
+					When building prototypes, it is common to incorporate things like a dropdown menu shared by multiple pages. Unfortunately, if we want to build out this interaction using inVision, we have to fake it with an entire screen to display the dropdown.
 				%h3
 					The Solution
 				%p
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis purus interdum sem elementum, vel luctus nisl pharetra. Phasellus ultrices tempor augue condimentum faucibus. Maecenas porta euismod pretium. Aenean ornare eu eros auctor sodales. Integer sit amet tortor eget est blandit sodales. Nam sit amet felis at magna iaculis condimentum. Phasellus sit amet mi fringilla, volutpat ipsum vitae, malesuada odio. Etiam vitae massa porta, porta lacus ac, euismod nibh. Vivamus non pulvinar lorem.
-			.col-sm-1
+					By supporting transparent PNGs, we could simply load the PNG over the top of the screen from which the Transparent PNG was navigated from. This way, we can display something like a dropdown from the main nav across multiple pages.
+				.alert.alert-info
+					%strong
+						Note:
+					The transparent PNG screen would have its own set of hotspots!
+			.col-sm-2
 %section.invert-section
 	.container
 		.row
 			.col-lg-12
-				=image_tag'expansions/1/hero.png', :class=>"img-responsive"
+				=image_tag'expansions/1/figure-1.png', :class=>"img-responsive"
+				=image_tag'expansions/1/figure-2.png', :class=>"img-responsive"
+				=image_tag'expansions/1/figure-3.png', :class=>"img-responsive"
 =partial"/shared/features-nav"
 
