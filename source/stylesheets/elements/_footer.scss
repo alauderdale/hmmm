@@ -1,0 +1,15 @@
+#footer{
+	border-top:$light-gray-color 1px solid;
+	background-color:$secondary-color;
+	p{
+		margin-bottom:0;
+		font-size:.7em;
+	}
+	a{
+		color:white;
+		&:hover{
+			color:$primary-color;
+		}
+	}
+
+}

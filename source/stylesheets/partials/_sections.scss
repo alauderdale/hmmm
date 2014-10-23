@@ -1,0 +1,26 @@
+//sections
+
+
+section{
+  padding:$baseline*2 0;
+  &.invert-section{
+    background-color:$secondary-color;
+    h1,h2,h3,h4,h6,p,li,small{
+      color:white;
+    }
+  }
+  &.off-white{
+    background-color:#fafafa;
+  }
+  //page-header
+  &.page-header-section{
+    padding:$baseline*6 0 $baseline*8 0;
+    @include background-size(cover);
+  }
+  &.page-header-image{
+    margin-top:-150px;
+  }
+}
+
+
+

@@ -1,0 +1,30 @@
+a{
+	color:$link-color;
+	&:hover{
+		color:$primary-color;
+		text-decoration:none;
+	}
+}
+
+.btn{
+	text-transform:uppercase;
+	border-radius:3px;
+	font-family:$flourish-font-name;
+	font-size:.8em;
+	@include transition-duration(.2s);
+	&.btn-primary{
+		background-color:$primary-color;
+		border-color:$primary-color;
+		&:hover{
+			background-color:shade($primary-color,10%);
+		}
+	}
+	&.btn-info{
+		background-color:$tertiary-color;
+		border-color:$tertiary-color;
+		&:hover{
+			background-color:tint($tertiary-color,10%);
+		}
+	}
+
+}

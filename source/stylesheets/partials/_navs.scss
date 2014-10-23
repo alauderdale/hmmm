@@ -1,0 +1,14 @@
+ul.features-nav{
+	li{
+		font-size:1.3em;
+		a{
+			width:100%;
+			padding:$baseline/1.5 0;
+			display:block;
+			@include transition-duration(.3s);
+			&:hover{
+				background-color:$light-gray-color;
+			}
+		}
+	}
+}

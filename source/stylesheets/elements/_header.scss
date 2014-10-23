@@ -1,0 +1,31 @@
+.main-nav{
+	background-color:transparent;
+	padding:$baseline*2 0 $baseline/2  0;
+	margin-bottom:-94px;
+	a.logo{
+		width: 153px;
+		height:34px;
+		display:block;
+		background:url(../images/logo.png) no-repeat;
+		background-size:100%;
+	}
+	ul{
+		li{
+			margin-right:20px;
+			padding:0;
+			&:last-of-type{
+				margin-right:0;
+			}
+			a{
+				color:white;
+				font-family:$flourish-font-name;
+				text-transform:uppercase;
+				font-size:.7em;
+				@include transition-duration(.2s);
+				&:hover{
+					color:$primary-color;
+				}
+			}
+		}
+	}
+}
